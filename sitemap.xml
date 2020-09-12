@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+ <url>
+  <loc>https://my-jigsaw-blog.com</loc>
+  <lastmod>2020-09-12T21:59:18+00:00</lastmod>
+  <changefreq>daily</changefreq>
+ </url>
+ <url>
+  <loc>https://my-jigsaw-blog.com/projects</loc>
+  <lastmod>2020-09-12T21:59:18+00:00</lastmod>
+  <changefreq>daily</changefreq>
+ </url>
+ <url>
+  <loc>https://my-jigsaw-blog.com/uses</loc>
+  <lastmod>2020-09-12T21:59:18+00:00</lastmod>
+  <changefreq>daily</changefreq>
+ </url>
+</urlset>

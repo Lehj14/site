@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="description" content="">
+
+        <meta property="og:title" content="Jelica Salta"/>
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://my-jigsaw-blog.com/projects"/>
+        <meta property="og:description" content="" />
+
+        <title>Jelica Salta</title>
+
+        <link rel="home" href="https://my-jigsaw-blog.com">
+        <link rel="icon" href="/favicon.ico">
+
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/assets/build/css/main.css?id=4d51c489ab2830fb6b8e">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/aecffe8031.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body class="flex flex-col justify-between min-h-screen leading-normal dark font-mono border-blue-500 border-opacity-100 border-8">
+        <header class="flex items-center h-24 py-4" role="banner">
+            <div class="container flex items-center max-w-8xl mx-auto px-4 lg:px-8">
+                <div id="vue-search" class="flex flex-1 justify-end items-center">
+                    <nav class="hidden lg:flex items-center justify-end text-lg">
+    <a title="Jelica Salta About" href="/"
+       class="ml-6 text-gray-200 hover:text-blue-600 ">
+        About
+    </a>
+
+    <a title="Jelica Salta Uses" href="/uses"
+       class="ml-6 text-gray-200 hover:text-blue-600 ">
+        Uses
+    </a>
+
+  
+</nav>
+
+</div>
+                    <button class="flex justify-center items-center bg-blue-500 border border-blue-500 h-10 px-5 rounded-full lg:hidden focus:outline-none"
+    onclick="navMenu.toggle()"
+>
+    <svg id="js-nav-menu-show" xmlns="http://www.w3.org/2000/svg"
+        class="fill-current text-white h-9 w-4" viewBox="0 0 32 32"
+    >
+        <path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/>
+    </svg>
+
+    <svg id="js-nav-menu-hide" xmlns="http://www.w3.org/2000/svg"
+        class="hidden fill-current text-white h-9 w-4" viewBox="0 0 36 30"
+    >
+        <polygon points="32.8,4.4 28.6,0.2 18,10.8 7.4,0.2 3.2,4.4 13.8,15 3.2,25.6 7.4,29.8 18,19.2 28.6,29.8 32.8,25.6 22.2,15 "/>
+    </svg>
+</button>
+
+                </div>
+            </div>
+        </header>
+
+        <nav id="js-nav-menu" class="nav-menu hidden lg:hidden">
+    <ul class="my-0">
+        <li class="pl-4">
+            <a
+                title="Jelica Salta About"
+                href="/"
+                class="nav-menu__item hover:text-blue-500 "
+            >About</a>
+        </li>
+        <li class="pl-4">
+            <a
+                title="Jelica Salta Uses"
+                href="/uses"
+                class="nav-menu__item hover:text-blue-500 "
+            >Uses</a>
+        </li>
+       
+    </ul>
+</nav>
+
+        <main role="main" class="flex-auto w-full container max-w-4xl mx-auto py-16 px-6">
+                <h1 class="text-gray-200">Side Projects<span class="blink_me ml-0">|</span></h1>
+
+    <article class="mt-5 px-2 w-full md:w-1/2 lg:w-1/3 xl:w-1/3">
+        <div class="card bg-red shadow-md rounded bg-white">
+            <nuxt-link to="/courses/example-course">
+                <img :src="`/images/${image}`" :alt="title" class="rounded-t w-full">
+            </nuxt-link>
+            <div class="p-4">
+                <header class="flex justify-between">
+                    <section>
+                        <h3 class="text-gray-700">
+                            <nuxt-link to="/courses/example-course" class="hover:text-gray-600" v-text="title"></nuxt-link>
+                        </h3>
+                        <p class="text-gray-600 mt-1" v-text="professor"></p>
+                    </section>
+                    <div v-if="price">
+                        <span class="px-2 py-1 bg-green-200 text-green-500 font-bold rounded">12121</span>
+                    </div>
+                </header>
+                <article class="text-gray-700 mt-2" v-text="excerpt"></article>
+            </div>
+            <footer class="border-t border-gray-300 uppercase p-5 flex justify-between">
+                <span class="text-gray-600 text-xs font-bold self-center" v-text="category"></span>
+                <a href="#" class="text-gray-600 hover:text-blue-600">
+                    <i v-if="price" class="fa fa-user"></i>
+                </a>
+            </footer>
+        </div>
+    </article>
+        </main>
+
+        <footer class="text-center text-sm mt-12 py-4" role="contentinfo">
+            <ul class="flex flex-col md:flex-row justify-center list-none">
+                <li class="md:mr-2">
+                    &copy; <a href="https://tighten.co" title="Tighten website">Jelica Salta</a> 2020.
+                </li>
+
+                <li>
+                    Built with ❤ using <a href="http://jigsaw.tighten.co" title="Jigsaw by Tighten">Jigsaw</a>
+                    and <a href="https://tailwindcss.com" title="Tailwind CSS, a utility-first CSS framework">Tailwind CSS</a>.
+                </li>
+            </ul>
+        </footer>
+
+        <script src="/assets/build/js/main.js?id=b6c838c85ec11c2124a9"></script>
+
+        <script>
+    const navMenu = {
+        toggle() {
+            const menu = document.getElementById('js-nav-menu');
+            menu.classList.toggle('hidden');
+            menu.classList.toggle('lg:block');
+            document.getElementById('js-nav-menu-hide').classList.toggle('hidden');
+            document.getElementById('js-nav-menu-show').classList.toggle('hidden');
+        },
+    }
+</script>
+    </body>
+</html>
